@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+    <title>Tech Blog</title>
+</head>
+<header>
+    <nav>
+        {{#if logged_in}}
+        <a href="/"><h4>Home</h4></a>
+        <a href="/dashboard"><h4>Dashboard</h4></a>
+        <a href="/" class="logout"><h4>Logout</h4></a>
+        {{else}}
+        <a href="/"><h4>Home</h4></a>
+        <a href="/login"><h4>Login</h4></a>
+        {{/if}}
+    </nav>
+    <div class="title">
+        <h1>Stonetop Character Creator</h1>
+    </div>
+</header>
+<body>
+    {{{body}}}
+{{#if logged_in}}
+<script src="/js/logout.js"></script>    
+{{/if}}
+</body>
+</html>
