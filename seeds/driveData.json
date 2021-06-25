@@ -35,5 +35,120 @@
       "name": "Trickery",
       "description": "Get someone or thing to act on false information."
     },
-    
-  ]
+    {
+      "name": "Challenge",
+      "description": "Provoke a fight with a worthy foe, just you & them."
+    },
+    {
+      "name": "Honor",
+      "description": "Fullfill a vow or oath made to an NPC."
+    },
+    {
+      "name": "Peace",
+      "description": "Prevent violence or end it without hurting anyone."
+    },
+    {
+      "name": "Pride",
+      "description": "Put someone in their place."
+    },
+    {
+      "name": "Duty",
+      "description": "Cause trouble by adhering strictly to doctrine."
+    },
+    {
+      "name": "Harmony",
+      "description": "Settle a dispute without anyone feeling wronged."
+    },
+    {
+      "name": "Knowledge",
+      "description": "Teach another something important."
+    },
+    {
+      "name": "Zeal",
+      "description": "Pass judgement hastily, without considering nuance or consequences."
+    },
+    {
+      "name": "Charity",
+      "description": "Bring relief or comfort to someone who is suffering."
+    },
+    {
+      "name": "Faith",
+      "description": "Walk brazenly into danger, sure of Helior’s plan."
+    },
+    {
+      "name": "Hope",
+      "description": "Lead another to act despite fear or doubt."
+    },
+    {
+      "name": "Mercy",
+      "description": "Forgive a wrong or set a helpless enemy free."
+    },
+    {
+      "name": "Honor",
+      "description": "Keep a promise you made to an NPC."
+    },
+    {
+      "name": "Prestige",
+      "description": "Impress an NPC from outside your home steading."
+    },
+    {
+      "name": "Resolve",
+      "description": "Give an order or enact a plan knowing it will bring an ally to harm."
+    },
+    {
+      "name": "Ruthlessness",
+      "description": "Deny mercy to an enemy or betray a supposed ally."
+    },
+    {
+      "name": "Mercy",
+      "description": "Release someone/thing from bondage or suffering."
+    },
+    {
+      "name": "Stewardship",
+      "description": "Put the best interests of a place or beast over a person’s desires."
+    },
+    {
+      "name": "Tenacity",
+      "description": "Refuse to turn back despite objection or disaster."
+    },
+    {
+      "name": "Wonder",
+      "description": "Show someone a place or thing of beauty."
+    },
+    {
+      "name": "Cunning",
+      "description": "Set up a ploy and then take advantage of it."
+    },
+    {
+      "name": "Curiosity",
+      "description": "Cause trouble by touching, opening, or tinkering with something."
+    },
+    {
+      "name": "Respect",
+      "description": "Impress another with your superior knowledge."
+    },
+    {
+      "name": "Secrecy",
+      "description": "Deflect or evade an inquiry into your doings."
+    },
+    {
+      "name": "Victory",
+      "description": "Endanger others in order to defeat the supernatural."
+    },
+    {
+      "name": "Bravery",
+      "description": "Face up to one of your fears."
+    },
+    {
+      "name": "Glory",
+      "description": "Impress onlookers with your bravery."
+    },
+    {
+      "name": "Sacrifice",
+      "description": "Suffer or endure hardship so that someone else does not need to do so."
+    },
+    {
+      "name": "Succor",
+      "description": "Provide aid or comfort to an NPC in need."
+    }
+]
