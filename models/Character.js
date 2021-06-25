@@ -61,10 +61,6 @@ Character.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    origin: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
     drive: {
         type: DataTypes.STRING,
         allowNull: false,
