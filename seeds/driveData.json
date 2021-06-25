@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Conciliation",
+      "description": "Calm, soothe, or mollify a hostile spirit or beast."
+    },
+    {
+      "name": "Cultivation",
+      "description": "Calm, soothe, or mollify a hostile spirit or beast."
+    },
+    {
+      "name": "Preservation",
+      "description": "Convince others to protect something of natural beauty or of importance to Danu."
+    },
+    {
+      "name": "Renewal",
+      "description": "Restore someone or thing to its prior, untainted state, or defeat a perversion of the natural order."
+    },
+    {
+      "name": "Conscience",
+      "description": "Forego comfort or advantage to do the right thing."
+    },
+    {
+      "name": "Excitement",
+      "description": "Cause an ally trouble by taking an unnecessary risk."
+    },
+    {
+      "name": "Glory",
+      "description": "Show off in front of NPCs who will tell your tale."
+    },
+    {
+      "name": "Romance",
+      "description": "Get intimate with someone you’re attracted to."
+    },
+    {
+      "name": "Trickery",
+      "description": "Get someone or thing to act on false information."
+    },
+    
+  ]
