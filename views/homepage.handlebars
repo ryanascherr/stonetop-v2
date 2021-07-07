@@ -4,13 +4,72 @@
 <div>
     <h2>Create a character, or choose a character below!</h2>
 </div>
-<div class="homepage-btns">
-    <button>Create a New Hero</button>
-    {{!-- <div class="">
-        {{#each characters as |character|}}
-            <button class="">
-                <h6 class="italic">{{character.name}} the {{character.playbook}}</h6>
-            </button>
-        {{/each}}
-    </div>  --}}
+{{!-- {{#if logged_in}} --}}
+<div class="all-playbooks">
+    <div class="playbook-container">
+        <h3>The Blessed</h3>
+        <h4>Medium Complexity</h4>
+        <div class="playbook-image-container">
+            <img src="/img/icon-blessed.png" alt="">
+        </div>
+        <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Fox</h3>
+        <h4>Lower Complexity</h4>
+        <img src="/img/icon-fox.png" alt="">
+        <p>Clever, quick, and skillful. Not above bending the rules or fighting dirty. Can be quite the charmer, too.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Heavy</h3>
+        <h4>Low/Medium Complexity</h4>
+        <img src="/img/icon-heavy.png" alt="">
+        <p>Not just a violent individual—our violent individual. A champion, yes, but a bit of a liability, too.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Judge</h3>
+        <h4>Lower Complexity</h4>
+        <img src="/img/icon-judge.png" alt="">
+        <p>Settler of disputes, chronicler, and divine bulwark against chaos. Insightful, tough, not necessarily persuasive.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Lightbearer</h3>
+        <h4>High Complexity</h4>
+        <img src="/img/icon-lightbearer.png" alt="">
+        <p>Invokes divine power via flame and candle. Beacon of hope, charity, and mercy. Fiery foe of the dark.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Marshal</h3>
+        <h4>Medium/High Complexity</h4>
+        <img src="/img/icon-marshal.png" alt="">
+        <p>Leads the town’s militia, plus a crew of followers. Makes choices about who lives and who dies.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Ranger</h3>
+        <h4>Lower Complexity</h4>
+        <img src="/img/icon-ranger.png" alt="">
+        <p>At home in the wild, the one you want with you when you travel. A resourceful guide and deadly hunter.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Seeker</h3>
+        <h4>Very High Complexity</h4>
+        <img src="/img/icon-seeker.png" alt="">
+        <p>Collector of lost lore and power, with potent artifacts that might well lead to their ruin.</p>
+        <button>Select</button>
+    </div>
+    <div class="playbook-container">
+        <h3>The Would-Be-Hero</h3>
+        <h4>Variable Complexity</h4>
+        <img src="/img/icon-would-be-hero.png" alt="">
+        <p>They’re in over their head and full of fear and anger, but they just might outshine us all.</p>
+        <button>Select</button>
+    </div>
 </div>
+{{!-- {{/if}} --}}

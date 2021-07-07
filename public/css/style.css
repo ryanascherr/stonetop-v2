@@ -29,3 +29,22 @@ nav a {
     color: white;
     padding: 0 10px;
 }
+
+.all-playbooks {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.playbook-container {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.playbook-image-container {
+    max-width: 75px;
+}
+
+img {
+    max-width: 100%;
+}
