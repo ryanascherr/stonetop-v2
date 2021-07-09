@@ -8,13 +8,13 @@
 <div class="all-playbooks">
     {{#each playbooks as |playbook|}}
     <div class="playbook-container">
-        <h3>{{playbook.name}}</h3>
-        <h4>{{playbook.complexity}}</h4>
+        <h2>{{playbook.name}}</h2>
+        <h3>{{playbook.complexity}}</h3>
         <div class="playbook-image-container">
             <img src="{{playbook.image}}" alt="">
         </div>
         <p>{{playbook.description}}</p>
-        <a href="/background"><button>Select</button></a>
+        <a href="/background" data-name="{{playbook.name}}"><button>Select</button></a>
     </div>
     {{/each}}
 </div>
