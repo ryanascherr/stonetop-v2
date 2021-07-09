@@ -3,13 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    width: 98%;
-    margin: 0 auto;
-}
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border: none;
 }
 
 h1 {
