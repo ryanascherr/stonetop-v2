@@ -6,13 +6,32 @@
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+body {
+    color: #0C526E;
 }
 
 button {
     padding: 10px;
-    background-color: teal;
+    background-color: #0C526E;
     color: white;
     border: none;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #0C526E;
+    background-color: white;
+    border: 2px solid #0C526E;
 }
 
 h1 {
@@ -39,16 +58,19 @@ nav a {
 }
 
 .playbook-container {
-    border: 2px solid black;
+    border: 2px solid #0C526E;
     padding: 10px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightblue;
+    border-radius: 10px;
 }
 
 .playbook-container p {
     text-align: center;
+    font-weight: bold;
 }
 
 .playbook-image-container {
@@ -57,4 +79,9 @@ nav a {
 
 img {
     max-width: 100%;
+    border-radius: 50%;
+}
+
+.title h1 {
+    text-shadow: 2px 2px 0 lightblue;
 }
