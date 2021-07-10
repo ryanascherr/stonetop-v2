@@ -1,0 +1,12 @@
+.login-signup-container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 200%;
+}
+
+.login-parent, .signup-parent {
+    display: flex;
+    flex-direction: column;
+}

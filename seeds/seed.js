@@ -15,10 +15,10 @@ const seedDatabase = async () => {
   //   returning: true,
   // });
 
-  // await Drive.bulkCreate(driveData, {
-  //   individualHooks: true,
-  //   returning: true,
-  // });
+  await Drive.bulkCreate(driveData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   await Playbook.bulkCreate(playbookData, {
     individualHooks: true,

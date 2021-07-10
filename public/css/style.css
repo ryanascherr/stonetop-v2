@@ -15,6 +15,7 @@ p {
 
 body {
     color: #0C526E;
+    font-size: 125%;
 }
 
 button {
@@ -55,6 +56,8 @@ nav a {
 .all-playbooks {
     width: 95%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .playbook-container {
@@ -84,4 +87,22 @@ img {
 
 .title h1 {
     text-shadow: 2px 2px 0 lightblue;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .playbook-container {
+        width: 45%;
+        margin: 2.5%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .playbook-container {
+        width: 28%;
+        margin: 2.5%;
+    }
+
 }
