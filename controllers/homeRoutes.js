@@ -3,6 +3,9 @@ const { User, Character, Playbook, Background, Drive } = require('../models');
 
 router.get('/', async (req, res) => {
       const playbookData = await Playbook.findAll({
+            order: [
+                  ['name', 'ASC']
+            ]
       });
 
       const playbooks = playbookData.map((playbook) => playbook.get({ plain: true }));

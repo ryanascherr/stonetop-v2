@@ -27,6 +27,10 @@ Playbook.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    date_created: {
+      type: DataTypes.DATE,
+      defaultValue: DataTypes.NOW,
+    },
     character_id: {
         type: DataTypes.INTEGER,
         references: {
