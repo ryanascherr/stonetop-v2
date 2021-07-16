@@ -6,13 +6,17 @@ router.get('/', async (req, res) => {
       });
 
       const playbooks = playbookData.map((playbook) => playbook.get({ plain: true }));
+
       res.render('homepage', { playbooks });
 });
 
 router.get('/background', async (req, res) => {
-      // const Background = await Background.where({
-      // });
-      res.render('background');
+      const backgroundData = await Background.findAll({
+      });
+
+      const backgrounds = backgroundData.map((playbook) => playbook.get({ plain: true }));
+
+      res.render('background', { backgrounds });
 });
 
 router.get('/drive', async (req, res) => {
@@ -20,10 +24,12 @@ router.get('/drive', async (req, res) => {
       });
 
       const drives = driveData.map((drives) => drives.get({ plain: true }));
+
       res.render('drive', { drives });
 });
 
 router.get('/login', async (req, res) => {
+      
       res.render('login');
 } )
 
