@@ -11,6 +11,10 @@ Drive.init(
         primaryKey: true,
         autoIncrement: true,
     },
+    playbook: {
+      type: DataTypes.STRING,
+      allowNull: false,
+  },
     name: {
         type: DataTypes.STRING,
         allowNull: false,
