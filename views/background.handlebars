@@ -1,9 +1,10 @@
 <h1>Backgrounds!!</h1>
 <div class="">
     {{#each backgrounds as |background|}}
-    <div class="">
+    <div class="all-playbooks">
         <h2>{{background.name}}</h2>
         <div>{{background.description}}</div>
+        <a href="/drive" data-name="{{background.name}}" class="playbook"><button>Select</button></a>
     {{/each}}
 </div>
 

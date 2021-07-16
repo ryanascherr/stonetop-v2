@@ -1,7 +1,12 @@
-<h1>Hey!</h1>
+<h2>Choose 1 of the drives below</h2>
+<p class="center">At the end of a session, if you’ve met your drive’s
+requirement, mark XP.</p>
 <div class="all-playbooks">
     {{#each drives as |drive|}}
-    <h2>{{drive.name}}</h2>
-    <h2>{{drive.description}}</h2>
+    <div class="drive-container">
+        <h3>{{drive.name}}</h3>
+        <p>{{drive.description}}</p>
+        <a href="/origin" data-name="{{drive.name}}" class="playbook"><button>Select</button></a>
+    </div>
     {{/each}}
 </div>
