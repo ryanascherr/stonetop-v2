@@ -2,9 +2,10 @@ const User = require('./User');
 const Character = require('./Character');
 const Drive = require('./Drive');
 const Background = require('./Background');
-const Playbook = require('./Playbook')
+const Playbook = require('./Playbook');
+const Origin = require('./Origin')
 
-module.exports = { User, Character, Drive, Background, Playbook };
+module.exports = { User, Character, Drive, Background, Playbook, Origin };
 
 //User has many Characters
 User.hasMany(Character, {
@@ -35,4 +36,4 @@ Character.belongsTo(User, {
 //     foreignKey: 'character_id'
 // })
 
-module.exports = { User, Character, Drive, Background, Playbook };
+module.exports = { User, Character, Drive, Background, Playbook, Origin };

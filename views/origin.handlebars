@@ -1,0 +1,10 @@
+<h2>Choose 1 of the origins and names below, or make up your own name</h2>
+<div class="all-playbooks">
+    {{#each origins as |origin|}}
+    <div class="drive-container">
+        <h3>{{origin.location}}</h3>
+        <p>{{origin.names}}</p>
+        <a href="/stats" data-name="{{origin.location}}" class="playbook"><button>Select</button></a>
+    </div>
+    {{/each}}
+</div>
