@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 router.get('/background', async (req, res) => {
       const backgroundData = await Background.findAll({
             where: {
-                  playbook: "The Seeker"
+                  playbook: req.body.playbookName
             }
       });
 
@@ -28,7 +28,7 @@ router.get('/background', async (req, res) => {
 router.get('/drive', async (req, res) => {
       const driveData = await Drive.findAll({
             where: {
-                  playbook: "The Seeker"
+                  playbook: req.body.playbook
             }
       });
 
