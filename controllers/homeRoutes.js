@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Character, Playbook, Background, Drive, Origin } = require('../models');
+const { User, Character, Playbook, Background, Drive, Origin, Move } = require('../models');
 
 router.get('/', async (req, res) => {
       const playbookData = await Playbook.findAll({
@@ -13,10 +13,25 @@ router.get('/', async (req, res) => {
       res.render('homepage', { playbooks });
 });
 
+router.get('/move', async (req, res) => {
+      const moveData = await Move.findAll({
+            order: [
+                  ['name', 'ASC']
+            ],
+            where: {
+                  playbook: "Basic"
+            }
+      });
+
+      const moves = moveData.map((move) => move.get({ plain: true }));
+
+      res.render('move', { moves });
+});
+
 router.get('/background', async (req, res) => {
       const backgroundData = await Background.findAll({
             where: {
-                  playbook: req.body.playbookName
+                  playbook: "The Blessed"
             }
       });
 
