@@ -67,6 +67,11 @@ router.get('/origin', async (req, res) => {
 router.get('/login', async (req, res) => {
       
       res.render('login');
-} )
+});
+
+router.get('/stat', async (req, res) => {
+      
+      res.render('stat');
+});
 
 module.exports = router;

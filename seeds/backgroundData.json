@@ -2,7 +2,7 @@
     {
       "playbook": "The Blessed",
       "name": "Initiate",
-      "description": "<p>Stonetop has long been home to a sacred order, keepers of the old ways and speakers for Danu. You are one such initiate, the most gifted in generations. You gain the Rites of the Land move.</p><p>There are other initiates in Stonetop, serving the goddess and the village. They aid you as followers—see the Initiates of Danu insert. Who are they? Choose 2 or 3:</p><ul><li><input type='checkbox'><b>Enfys</b>, your acolyte, beloved by birds</li><li><input type='checkbox'><b>Afon</b>, strange and fae-touched</li><li><input type='checkbox'><b>Gwendyl</b>, your mentor, a talented healer</li><li><input type='checkbox'><b>Olwin</b>, your anointed lover, seer of fates</li><li><input type='checkbox'><b>Seren the Eldest</b>, wise and hard as winter</li></ul>"
+      "description": "<p>Stonetop has long been home to a sacred order, keepers of the old ways and speakers for Danu. You are one such initiate, the most gifted in generations. You gain the Rites of the Land move.</p><p>There are other initiates in Stonetop, serving the goddess and the village. They aid you as followers—see the Initiates of Danu insert. Who are they? Choose 2 or 3:</p><ul><li><input type='checkbox'><b> Enfys</b>, your acolyte, beloved by birds</li><li><input type='checkbox'><b> Afon</b>, strange and fae-touched</li><li><input type='checkbox'><b> Gwendyl</b>, your mentor, a talented healer</li><li><input type='checkbox'><b> Olwin</b>, your anointed lover, seer of fates</li><li><input type='checkbox'><b> Seren the Eldest</b>, wise and hard as winter</li></ul>"
     },
     {
       "playbook": "The Blessed",
