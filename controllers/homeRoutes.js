@@ -41,10 +41,10 @@ router.get('/background/:playbookName', async (req, res) => {
       res.render('background', { backgrounds });
 });
 
-router.get('/drive', async (req, res) => {
+router.get('/drive/:playbookName', async (req, res) => {
       const driveData = await Drive.findAll({
             where: {
-                  playbook: "The Blessed"
+                  playbook: req.params.playbookName
             }
       });
 
@@ -53,10 +53,10 @@ router.get('/drive', async (req, res) => {
       res.render('drive', { drives });
 });
 
-router.get('/origin', async (req, res) => {
+router.get('/origin/:playbookName', async (req, res) => {
       const originData = await Origin.findAll({
             where: {
-                  playbook: "The Heavy"
+                  playbook: req.params.playbookName
             }
       });
 
