@@ -28,10 +28,11 @@ router.get('/move', async (req, res) => {
       res.render('move', { moves });
 });
 
-router.get('/background', async (req, res) => {
+router.get('/background/:playbookName', async (req, res) => {
+      console.log(req.params.playbookName);
       const backgroundData = await Background.findAll({
             where: {
-                  playbook: "The Blessed"
+                  playbook: req.params.playbookName
             }
       });
 
