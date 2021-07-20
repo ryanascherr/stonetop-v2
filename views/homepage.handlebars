@@ -4,10 +4,12 @@
 <div>
     {{#if logged_in}}
     <h2>Create a character by selecting a playbook below!</h2>
+    <h2>Or view created characters by clicking 'My Characters' above!</h2>
     {{else}}
     <h2>Log in to create a character!</h2>
     {{/if}}
 </div>
+{{#if logged_in}}
 <div class="all-playbooks">
     {{#each playbooks as |playbook|}}
     <div class="playbook-container">
@@ -25,6 +27,11 @@
     </div>
     {{/each}}
 </div>
+{{else}}
+<div class="village-container">
+    <img src="/img/stonetop-village.jpeg" alt="" class="village">
+</div>
+{{/if}}
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="/js/homepage.js"></script>
