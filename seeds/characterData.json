@@ -1,0 +1,36 @@
+[
+    {
+        "playbook": "The Blessed",
+        "name": "Bobby",
+        "health": 18,
+        "damage": 6,
+        "armor": 0,
+        "exp": 0,
+        "str": 1,
+        "dex": 1,
+        "int": 0,
+        "wis": 2,
+        "con": 0,
+        "cha": 1,
+        "origin": "Stonetop",
+        "drive": "Renewal",
+        "background": "Raised by Wolves"
+    },
+    {
+        "playbook": "The Heavy",
+        "name": "Mulgor",
+        "health": 20,
+        "damage": 10,
+        "armor": 0,
+        "exp": 0,
+        "str": 2,
+        "dex": 1,
+        "int": 0,
+        "wis": 0,
+        "con": 1,
+        "cha": 1,
+        "origin": "Marshedge",
+        "drive": "Challenge",
+        "background": "Sheriff"
+    }
+]

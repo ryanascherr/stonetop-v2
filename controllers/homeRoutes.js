@@ -12,13 +12,13 @@ router.get('/', async (req, res) => {
             attributes: { exclude: ['password'] },
           });
       
-          const user = userData.get({ plain: true });
+      //     const user = userData.get({ plain: true });
 
       const playbooks = playbookData.map((playbook) => playbook.get({ plain: true }));
 
       res.render('homepage', { 
             playbooks,
-            ...user, logged_in:true });
+            logged_in:true });
 
       // res.render('dashboard', {
       //       ...user,
@@ -86,6 +86,19 @@ router.get('/login', async (req, res) => {
 router.get('/stat', async (req, res) => {
       
       res.render('stat');
+});
+
+router.get('/characters', async (req, res) => {
+
+      const characterData = await Character.findAll({
+            order: [
+                  ['name', 'ASC']
+            ]
+      });
+
+      const characters = characterData.map((playbook) => playbook.get({ plain: true }));
+      
+      res.render('characters', { characters });
 });
 
 module.exports = router;

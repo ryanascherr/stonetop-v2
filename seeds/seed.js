@@ -7,6 +7,7 @@ const playbookData = require('./playbookData.json');
 const backgroundData = require('./backgroundData.json');
 const originData = require('./originData.json');
 const moveData = require('./moveData.json');
+const characterData = require('./characterData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -37,6 +38,11 @@ const seedDatabase = async () => {
   });
 
   await Move.bulkCreate(moveData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+  await Character.bulkCreate(characterData, {
     individualHooks: true,
     returning: true,
   });

@@ -1,0 +1,10 @@
+<h1>Characters</h1>
+<div class="all-playbooks">
+    {{#each characters as |character|}}
+    <div class="playbook-container">
+        <h2>{{character.name}}</h2>
+        <h3>{{character.playbook}}</h3>
+        <a href="/sheet/{{character.id}}" data-name="{{character.id}}" class="playbook"><button>Select</button></a>
+    </div>
+    {{/each}}
+</div>
