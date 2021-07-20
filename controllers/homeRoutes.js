@@ -8,9 +8,22 @@ router.get('/', async (req, res) => {
             ]
       });
 
+      const userData = await User.findByPk(req.session.user_id, {
+            attributes: { exclude: ['password'] },
+          });
+      
+          const user = userData.get({ plain: true });
+
       const playbooks = playbookData.map((playbook) => playbook.get({ plain: true }));
 
-      res.render('homepage', { playbooks });
+      res.render('homepage', { 
+            playbooks,
+            ...user, logged_in:true });
+
+      // res.render('dashboard', {
+      //       ...user,
+      //       logged_in: true
+      //     });
 });
 
 router.get('/move', async (req, res) => {
