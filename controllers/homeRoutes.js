@@ -18,7 +18,9 @@ router.get('/', async (req, res) => {
 
       res.render('homepage', { 
             playbooks,
-            logged_in:true });
+            logged_in: req.session.logged_in });
+
+            
 
       // res.render('dashboard', {
       //       ...user,
@@ -51,7 +53,7 @@ router.get('/background/:playbookName', async (req, res) => {
 
       const backgrounds = backgroundData.map((background) => background.get({ plain: true }));
 
-      res.render('background', { backgrounds });
+      res.render('background', { backgrounds, logged_in: req.session.logged_in });
 });
 
 router.get('/drive/:playbookName', async (req, res) => {
@@ -63,7 +65,7 @@ router.get('/drive/:playbookName', async (req, res) => {
 
       const drives = driveData.map((drive) => drive.get({ plain: true }));
 
-      res.render('drive', { drives });
+      res.render('drive', { drives, logged_in: req.session.logged_in });
 });
 
 router.get('/origin/:playbookName', async (req, res) => {
@@ -75,7 +77,7 @@ router.get('/origin/:playbookName', async (req, res) => {
 
       const origins = originData.map((origin) => origin.get({ plain: true }));
 
-      res.render('origin', { origins });
+      res.render('origin', { origins, logged_in: req.session.logged_in });
 });
 
 router.get('/login', async (req, res) => {
@@ -98,7 +100,7 @@ router.get('/characters', async (req, res) => {
 
       const characters = characterData.map((playbook) => playbook.get({ plain: true }));
       
-      res.render('characters', { characters });
+      res.render('characters', { characters, logged_in: req.session.logged_in });
 });
 
 module.exports = router;
