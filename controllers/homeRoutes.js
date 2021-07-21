@@ -8,11 +8,11 @@ router.get('/', async (req, res) => {
             ]
       });
 
-      const userData = await User.findByPk(req.session.user_id, {
+      const userData = await User.findByPk(req.session.id, {
             attributes: { exclude: ['password'] },
           });
       
-      //     const user = userData.get({ plain: true });
+      //     const users = userData.get({ plain: true });
 
       const playbooks = playbookData.map((playbook) => playbook.get({ plain: true }));
 
@@ -87,7 +87,20 @@ router.get('/login', async (req, res) => {
 
 router.get('/stat', async (req, res) => {
       
-      res.render('stat');
+      res.render('stat', { logged_in: req.session.logged_in });
+});
+
+router.get('/sheet/:id', async (req, res) => {
+
+      const characterData = await Character.findAll({
+            where: {
+                  id: req.params.id
+            }
+      });
+
+      const characters = characterData.map((character) => character.get({ plain: true }));
+      
+      res.render('sheet', {characters, logged_in: req.session.logged_in});
 });
 
 router.get('/characters', async (req, res) => {
@@ -98,7 +111,7 @@ router.get('/characters', async (req, res) => {
             ]
       });
 
-      const characters = characterData.map((playbook) => playbook.get({ plain: true }));
+      const characters = characterData.map((character) => character.get({ plain: true }));
       
       res.render('characters', { characters, logged_in: req.session.logged_in });
 });

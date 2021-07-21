@@ -53,6 +53,29 @@ nav a {
     padding: 0 10px;
 }
 
+.homepage {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.sheet {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.sheet-stat {
+    border: 2px solid #0C526E;
+    padding: 10px;
+    font-size: 200%;
+    margin: 15px;
+}
+
+.stat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .all-playbooks {
     width: 95%;
     margin: 0 auto;
@@ -120,7 +143,47 @@ img {
     justify-content: center;
 }
 
+.stat-boxes button {
+    font-size: 100%;
+    margin: 0;
+}
+
+select {
+    font-size: 100%;
+    color: #0C526E;
+}
+
+.origin-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.origin-button {
+    display: flex;
+    justify-content: center;
+}
+
+.origin-button button {
+    font-size: 100%;
+}
+
+.origin-name input, .origin-name select {
+    font-size: 100%;
+    padding: 10px;
+    color: #0C526E;
+    text-align: center;
+}
+
 .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.stat-main {
     border: 2px solid #0C526E;
     border-radius: 10px;
     display: flex;
@@ -128,7 +191,11 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 30px;
+}
+
+.stat-description {
+    padding: 10px;
+    text-align: center;
 }
 
 .relative-up {

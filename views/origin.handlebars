@@ -1,10 +1,24 @@
-<h2>Choose 1 of the origins and names below, or make up your own name</h2>
+<h2>Pick one origin and a name to match (or make up something similar).</h2>
+<h3>Stonetop is your home, or close enough, but where are you (or your family) from originally?</h3>
+<div class="origin-name">
+    <p>Choose a place of origin:</p>
+    <select>
+        <option value="-">-</option>
+        {{#each origins as |origin|}}
+        <option value={{origin.location}}>{{origin.location}}</option>
+        {{/each}}
+    </select>
+    <p>Choose a name:</p>
+    <input type="text" name="" id="">
+</div>
 <div class="all-playbooks">
     {{#each origins as |origin|}}
     <div class="playbook-container">
         <h3>{{origin.location}}</h3>
         <p>{{origin.names}}</p>
-        <a href="/stat" data-name="{{origin.location}}" class="playbook"><button>Select</button></a>
     </div>
     {{/each}}
+</div>
+<div class="origin-button">
+    <a href="/stat" data-name="{{origin.location}}" class="playbook"><button>Select</button></a>
 </div>

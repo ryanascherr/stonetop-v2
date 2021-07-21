@@ -10,3 +10,13 @@
     display: flex;
     flex-direction: column;
 }
+
+.login-parent input, .signup-parent input {
+    font-size: 100%;
+    padding: 10px;
+    color: #0C526E;
+}
+
+.login-parent button, .signup-parent button {
+    font-size: 100%;
+}

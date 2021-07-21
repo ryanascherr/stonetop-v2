@@ -1,0 +1,13 @@
+<div class="sheet">
+    {{#each characters as |character|}}
+    <h1>{{character.name}} {{character.playbook}}</h1>
+    <div class="stat-container">
+        <div class="sheet-stat">{{character.str}}</div>
+        <div class="sheet-stat">{{character.dex}}</div>
+        <div class="sheet-stat">{{character.int}}</div>
+        <div class="sheet-stat">{{character.wis}}</div>
+        <div class="sheet-stat">{{character.con}}</div>
+        <div class="sheet-stat">{{character.cha}}</div>
+    </div>
+    {{/each}}
+</div>
