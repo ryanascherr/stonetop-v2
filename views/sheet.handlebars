@@ -5,43 +5,75 @@
         <div class="stat">
             <div class="stat-main">
                 <span class="relative-up">Strength</span>
-                <h3 class="str">{{character.str}}</h3>
+                <h3 class="stat-button" data-name="STR">{{character.str}}</h3>
                 <span class="relative-down">(STR)</span>
             </div>
         </div>
         <div class="stat">
             <div class="stat-main">
                 <span class="relative-up">Dexterity</span>
-                <h3>{{character.dex}}</h3>
+                <h3 class="stat-button" data-name="DEX">{{character.dex}}</h3>
                 <span class="relative-down">(DEX)</span>
             </div>
         </div>
         <div class="stat">
             <div class="stat-main">
                 <span class="relative-up">Intelligence</span>
-                <h3>{{character.int}}</h3>
+                <h3 class="stat-button" data-name="INT">{{character.int}}</h3>
                 <span class="relative-down">(INT)</span>
             </div>
         </div>
         <div class="stat">
             <div class="stat-main">
                 <span class="relative-up">Wisdom</span>
-                <h3>{{character.wis}}</h3>
+                <h3 class="stat-button" data-name="WIS">{{character.wis}}</h3>
                 <span class="relative-down">(WIS)</span>
             </div>
         </div>
         <div class="stat">
             <div class="stat-main">
                 <span class="relative-up">Constitution</span>
-                <h3>{{character.con}}</h3>
+                <h3 class="stat-button" data-name="CON">{{character.con}}</h3>
                 <span class="relative-down">(CON)</span>
             </div>
         </div>
         <div class="stat">
             <div class="stat-main">
                 <span class="relative-up">Charisma</span>
-                <h3>{{character.str}}</h3>
+                <h3 class="stat-button" data-name="CHA">{{character.cha}}</h3>
                 <span class="relative-down">(CHA)</span>
+            </div>
+        </div>
+    </div>
+    <div class="stat-boxes">
+        <div class="stat-secondary">
+            <div class="stat-main">
+                <h3>{{character.damage}}</h3>
+                <span class="relative-down">Damage</span>
+            </div>
+        </div>
+        <div class="stat-secondary">
+            <div class="stat-main">
+                <h3>20</h3>
+                <span class="relative-down">HP (max {{character.health}})</span>
+            </div>
+        </div>
+        <div class="stat-secondary">
+            <div class="stat-main">
+                <h3>{{character.armor}}</h3>
+                <span class="relative-down">Armor</span>
+            </div>
+        </div>
+        <div class="stat-secondary">
+            <div class="stat-main">
+                <h3>{{character.exp}}</h3>
+                <span class="relative-down">XP</span>
+            </div>
+        </div>
+        <div class="stat-secondary">
+            <div class="stat-main">
+                <h3>1</h3>
+                <span class="relative-down">Level</span>
             </div>
         </div>
     </div>

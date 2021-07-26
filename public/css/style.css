@@ -143,6 +143,13 @@ img {
     justify-content: center;
 }
 
+/* .secondary-stat-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20%;
+} */
+
 .stat-boxes button {
     font-size: 100%;
     margin: 0;
@@ -181,6 +188,13 @@ select {
     flex-direction: column;
     align-items: center;
     margin: 30px;
+}
+
+.stat-secondary {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    width: 30%;
 }
 
 .stat-main {
@@ -226,7 +240,6 @@ select {
 }
 
 .stat-main h3 {
-    /* border: 2px solid #0C526E; */
     border-radius: 10px;
     padding: 10px;
     background-color: #0C526E;
@@ -260,6 +273,10 @@ select {
 
     .stat {
         width: 40%;
+    }
+
+    .stat-secondary {
+        width: 20%
     }
 
 }
