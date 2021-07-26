@@ -1,13 +1,57 @@
 <div class="sheet">
     {{#each characters as |character|}}
     <h1>{{character.name}} {{character.playbook}}</h1>
-    <div class="stat-container">
-        <div class="sheet-stat">{{character.str}}</div>
-        <div class="sheet-stat">{{character.dex}}</div>
-        <div class="sheet-stat">{{character.int}}</div>
-        <div class="sheet-stat">{{character.wis}}</div>
-        <div class="sheet-stat">{{character.con}}</div>
-        <div class="sheet-stat">{{character.cha}}</div>
+    <div class="stat-boxes">
+        <div class="stat">
+            <div class="stat-main">
+                <span class="relative-up">Strength</span>
+                <h3 class="str">{{character.str}}</h3>
+                <span class="relative-down">(STR)</span>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-main">
+                <span class="relative-up">Dexterity</span>
+                <h3>{{character.dex}}</h3>
+                <span class="relative-down">(DEX)</span>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-main">
+                <span class="relative-up">Intelligence</span>
+                <h3>{{character.int}}</h3>
+                <span class="relative-down">(INT)</span>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-main">
+                <span class="relative-up">Wisdom</span>
+                <h3>{{character.wis}}</h3>
+                <span class="relative-down">(WIS)</span>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-main">
+                <span class="relative-up">Constitution</span>
+                <h3>{{character.con}}</h3>
+                <span class="relative-down">(CON)</span>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-main">
+                <span class="relative-up">Charisma</span>
+                <h3>{{character.str}}</h3>
+                <span class="relative-down">(CHA)</span>
+            </div>
+        </div>
     </div>
+    <div class="dice-tray">
+        <h2 class="dice-result"></h2>
+        <h2 class="level-of-success"></h2>
+    </div>
+</div>
     {{/each}}
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/sheet.js"></script> 

@@ -8,10 +8,13 @@ router.get('/', async (req, res) => {
             ]
       });
 
+      console.log("THIS IS A STRING" + req.session.id);
+
       const userData = await User.findByPk(req.session.id, {
             attributes: { exclude: ['password'] },
           });
       
+          console.log(userData);
       //     const users = userData.get({ plain: true });
 
       const playbooks = playbookData.map((playbook) => playbook.get({ plain: true }));

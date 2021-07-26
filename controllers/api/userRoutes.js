@@ -7,6 +7,8 @@ router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { username: req.body.username } });
 
+    console.log(userData);
+
     if (!userData) {
       res
         .status(400)
@@ -25,6 +27,7 @@ router.post('/login', async (req, res) => {
 
     req.session.save(() => {
       req.session.id = userData.id;
+      console.log(req.session.id);
       req.session.username = userData.name,
       req.session.logged_in = true;
       console.log("i'm logged in")
