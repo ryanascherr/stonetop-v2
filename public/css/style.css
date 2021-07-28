@@ -60,7 +60,7 @@ nav a {
 
 .sheet {
     width: 95%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .sheet-stat {
@@ -139,16 +139,25 @@ img {
     width: 95%;
     margin: 20px auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
 }
 
-/* .secondary-stat-boxes {
+.stat-couple {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 20%;
-} */
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input {
+    margin-right: 5px;
+}
 
 .stat-boxes button {
     font-size: 100%;
@@ -239,14 +248,14 @@ select {
     margin: 0 auto;
 }
 
-.stat-main h3 {
+.stat-button, .stat-damage {
     border-radius: 10px;
     padding: 10px;
     background-color: #0C526E;
     color: white;
 }
 
-.stat-main h3:hover {
+.stat-button:hover, .stat-damage:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -262,6 +271,24 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sheet-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.sheet-nav a {
+    color: #0C526E;
+    padding: 10px;
+}
+
+.red {
+    background-color: #E74C3C;
+}
+
+.secondary-stat-boxes {
+    display: flex;
 }
 
 @media only screen and (min-width: 768px) {
@@ -292,5 +319,9 @@ select {
         width: 28%;
     }
 
+    .dice-tray {
+        width: 50%;
+        margin: 0 auto;
+    }
 
 }

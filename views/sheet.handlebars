@@ -1,54 +1,77 @@
 <div class="sheet">
     {{#each characters as |character|}}
     <h1>{{character.name}} {{character.playbook}}</h1>
+    <div class="sheet-nav">
+        <a href="#">Stats</a>
+        <a href="#">Background/Origin</a>
+        <a href="#">Moves</a>
+    </div>
     <div class="stat-boxes">
-        <div class="stat">
-            <div class="stat-main">
-                <span class="relative-up">Strength</span>
-                <h3 class="stat-button" data-name="STR">{{character.str}}</h3>
-                <span class="relative-down">(STR)</span>
+        <div class="stat-couple">
+            <div class="stat">
+                <div class="stat-main">
+                    <span class="relative-up">Strength</span>
+                    <h3 class="stat-button" data-name="STR" id="strength">{{character.str}}</h3>
+                    <span class="relative-down">(STR)</span>
+                </div>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="weakened" value="Bike" id="weakened-checkbox">
+                <p>Weakened</p>
+            </div>
+            <div class="stat">
+                <div class="stat-main">
+                    <span class="relative-up">Dexterity</span>
+                    <h3 class="stat-button" data-name="DEX" id="dexterity">{{character.dex}}</h3>
+                    <span class="relative-down">(DEX)</span>
+                </div>
             </div>
         </div>
-        <div class="stat">
-            <div class="stat-main">
-                <span class="relative-up">Dexterity</span>
-                <h3 class="stat-button" data-name="DEX">{{character.dex}}</h3>
-                <span class="relative-down">(DEX)</span>
+        <div class="stat-couple">
+            <div class="stat">
+                <div class="stat-main">
+                    <span class="relative-up">Intelligence</span>
+                    <h3 class="stat-button" data-name="INT" id="intelligence">{{character.int}}</h3>
+                    <span class="relative-down">(INT)</span>
+                </div>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="dazed" value="Bike">
+                <p>Dazed</p>
+            </div>
+            <div class="stat">
+                <div class="stat-main">
+                    <span class="relative-up">Wisdom</span>
+                    <h3 class="stat-button" data-name="WIS" id="wisdom">{{character.wis}}</h3>
+                    <span class="relative-down">(WIS)</span>
+                </div>
             </div>
         </div>
-        <div class="stat">
-            <div class="stat-main">
-                <span class="relative-up">Intelligence</span>
-                <h3 class="stat-button" data-name="INT">{{character.int}}</h3>
-                <span class="relative-down">(INT)</span>
+        <div class="stat-couple">
+            <div class="stat">
+                <div class="stat-main">
+                    <span class="relative-up">Constitution</span>
+                    <h3 class="stat-button" data-name="CON" id="constitution">{{character.con}}</h3>
+                    <span class="relative-down">(CON)</span>
+                </div>
             </div>
-        </div>
-        <div class="stat">
-            <div class="stat-main">
-                <span class="relative-up">Wisdom</span>
-                <h3 class="stat-button" data-name="WIS">{{character.wis}}</h3>
-                <span class="relative-down">(WIS)</span>
+            <div class="checkbox-container">
+                <input type="checkbox" name="miserable" value="Bike">
+                <p>Miserable</p>
             </div>
-        </div>
-        <div class="stat">
-            <div class="stat-main">
-                <span class="relative-up">Constitution</span>
-                <h3 class="stat-button" data-name="CON">{{character.con}}</h3>
-                <span class="relative-down">(CON)</span>
-            </div>
-        </div>
-        <div class="stat">
-            <div class="stat-main">
-                <span class="relative-up">Charisma</span>
-                <h3 class="stat-button" data-name="CHA">{{character.cha}}</h3>
-                <span class="relative-down">(CHA)</span>
+            <div class="stat">
+                <div class="stat-main">
+                    <span class="relative-up">Charisma</span>
+                    <h3 class="stat-button" data-name="CHA" id="charisma">{{character.cha}}</h3>
+                    <span class="relative-down">(CHA)</span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="stat-boxes">
+    <div class="secondary-stat-boxes">
         <div class="stat-secondary">
             <div class="stat-main">
-                <h3>{{character.damage}}</h3>
+                <h3 class="stat-damage">{{character.damage}}</h3>
                 <span class="relative-down">Damage</span>
             </div>
         </div>
